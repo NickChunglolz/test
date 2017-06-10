@@ -1751,4 +1751,22 @@ p a:hover {
 .book-step .step-done.active {
     background: url("https://www.in89pier2.com.tw/assets/step-done-ee08624936552ca959406c11e2b6c0ac753f4148b21995bd0fa533b30a870a4f.png") no-repeat
 }
+.round-corner-button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fed855;
+    cursor: pointer
+}
+
+.round-corner-button.border-type-btn {
+    border: 2px solid #fed855;
+    background: none;
+    color: #fed855
+}
 
