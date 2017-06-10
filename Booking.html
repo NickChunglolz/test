@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ticket Info - Cinema Theater Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo"><img src="images/logo.png" alt=""></a>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="movies.html">Movies</a>
+					<ul>
+						<li>
+							<a href="#">Now Showing</a>
+						</li>
+						<li>
+							<a href="#">Comming Soon</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ticket-info.html">Ticket Info</a>
+				</li>
+				<li class="selected">
+					<a href="Booking.html">Booking</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+<section style="color:white;" class="body">
+            <div class="inside-pages-title">
+              <h1 class="title-underline">訂票前請詳讀須知</h1>
+            </div>
+            <ol class="booking-notice">
+              <li>提醒您記得於電影開演前至影院櫃台取票，電影開演後如未取票者恕不接受退票。</li>
+              <li class="is-yellow">每筆交易最多可購買 6 張電影票。</li>
+              <li>線上訂票一律以信用卡儲值或付款。</li>
+              <li class="is-yellow">「映卡」會員票訂購規範：
+                <ul>
+                  <li>每部電影可購買２張會員票。若一部電影有其他版本，則每一版本可購買２張會員票。</li>
+                  <li>單買票券每張收取手續費 NT$20 ，搭配指定票餐免收手續費。</li>
+                  <li>網路訂票享有點數累積，訂票完成後由系統直接集點，唯無法使用線上點數折抵。</li>
+                </ul>
+              </li>
+              <li>「官網會員」（非持卡顧客）訂票收取每張手續費 NT$20 ，不列入點數累積。</li>
+              <li class="is-yellow">優待票取票時需出示學生證、健保卡、軍警相關證明文件。二歲以上，且未滿十二之兒童，以優待票進場（未滿兩歲之兒童不佔位免費入場，每位家長限帶一名。）</li>
+              <li>早場票為上午１１點前放映場次（不限購買身份）。</li>
+              <li class="is-yellow">愛心票適用於65歲以上人士（憑身分證件）、身心障礙人士與陪同者限一名（憑殘障手冊）。</li>
+              <li>
+			  於本網路訂票系統完成訂票，可於訂購場次開演前兩小時，於線上直接進行退票作業，點選[影迷俱樂部]-&gt;[帳戶管理]-&gt;[購票紀錄查詢]操作退票。<br>
+			  若超過上述時間欲退換票，需攜帶原網路訂票之信用卡／會員卡親至 in89駁二電影院售票櫃台辦理退票，僅接受全取全退，須收每張手續費 NT$20（如未攜帶原購票信用卡／會員卡，恕無法辦理退換票），更換電影票僅限有剩餘座位的場次。<br>由於映卡為儲值卡，故消費金額將退回映卡內，恕不退現金。
+			  </li>
+			  <li>若片長超過2小時30分鐘，各類型票價需加10元，愛心票需加5元。</li>
+            </ol>
+            <input type="button" onclick="javascript:location.href='/booking/time'" value="立即訂票！" class="round-corner-button">
+          </section>
+		  <form class="simple_form is-center" novalidate="novalidate" action="/booking/seats" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="2H3+A/B+mfYe2jXkh1vj2M3quSrLjyr2WluE5CwkxR6NaZWZVn8bbavztQXfo8F4Wc31kIrVd0ULeRia1TRUkA==">
+    <div class="book-info">
+      <div class="book-step">
+        <ul>
+          <li class="step-one">選擇電影及場次</li>
+          <li class="step-next">選擇座位</li>
+          <li class="step-next">選擇票種</li>
+          <li class="step-next">選擇付款方式</li>
+          <li class="step-next">確認訂單</li>
+          <li class="step-done">完成購票</li>
+        </ul>
+      </div>
+      <table class="book-table">
+        <tbody>
+          <tr>
+            <td rowspan="3" class="film-pic"><img id="photo_img" src="/assets/default-897c2ef35dabfb95e6aed6e3cdbee4ae8ab81b677d4a36bcc6865e27b2e42874.png" alt="電影劇照"></td>
+            <td>
+              <div class="select-style">
+                <select name="movie_id" id="select_movie" required="required">
+                  <option value="">選擇電影</option>
+                <option value="386">愚行錄</option><option value="387">鹽與火之歌</option><option value="403">八月</option><option value="402">神鬼傳奇</option><option value="400">佈局</option><option value="401">老炮兒</option><option value="385">神力女超人</option><option value="399">吃吃的愛</option><option value="383">為妳唱的歌</option><option value="384">墨利斯的情人 經典數位修復</option><option value="377">加勒比海盜 神鬼奇航：死無對證</option><option value="381">園長夫人：動物園的奇蹟</option><option value="391">純情 日韓巨星映畫祭：華麗之惡</option><option value="370">這時對，那時錯 洪常秀專題影展</option></select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="select-style">
+                <select name="date" id="select_date" required="required">
+                  <option value="">選擇時間</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="select-style">
+                <select name="stage_id" id="select_stage" required="required">
+                  <option value="">選擇場次</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <input type="submit" value="下一步" class="round-corner-button btn-margin">
+    <input type="reset" value="重新選擇" class="round-corner-button border-type-btn btn-margin">
+	<input type="hidden" id="selected_movie" value="0">
+</form>
+	<div id="footer">
+		<div>
+			<div>
+				<span>Quick Links</span>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="ticket-info.html">Ticket Info</a>
+					</li>
+					<li>
+						<a href="#">Location</a>
+					</li>
+					<li>
+						<a href="movies.html">Now Showing</a>
+					</li>
+					<li>
+						<a href="rentals.html">Rentals</a>
+					</li>
+					<li>
+						<a href="about.html">Contact</a>
+					</li>
+					<li>
+						<a href="movies.html">Comming Soon</a>
+					</li>
+					<li>
+						<a href="about.html">The Company</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</div>
+			<div class="section">
+				<span>Recent Tweets</span>
+				<ul>
+					<li>
+						<p>
+							Sed id mattis tellus. Proin egestas velit vel neque placerat sed interdum neque porta.
+						</p>
+						<span><a href="#">- 1 day ago</a></span>
+					</li>
+					<li>
+						<p>
+							Praesent at urna ac urna congue convallis.
+						</p>
+						<span><a href="#">- 2 day ago</a></span>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<span>Sign Up For Our Mailing List</span>
+				<p>
+					Praesent at urna ac urna congue convallis. Maecenas sed placerat turpis. Duis in dolor ut nibh molestie faucibus.
+				</p>
+				<form action="index.html">
+					<input type="text" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Enter Email Address Here':this.value;" value="Enter Email Address Here">
+					<input type="submit" value="">
+				</form>
+			</div>
+			<p>
+				&#169; 2023 Cinema Theatre
+			</p>
+			<div class="connect">
+				<span>Stay Connected:</span> <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a> <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a> <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">google+</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
